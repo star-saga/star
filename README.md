@@ -124,6 +124,7 @@ spring.datasource.timeBetweenEvictionRunsMillis= 60000
 spring.datasource.testOnReturn= false
 spring.datasource.maxActive= 50
 ```
+注：完整的程序样例见star文件夹
 ### 未来扩展
 * 仅支持具有明确的分支事务执行序列的业务应用，对于不明确的业务应用则需要技术人员对其进行修改，以确定其执行序列，未来将支持由框架自行确定其执行序列，而不用手动修改；
 * 事件驱动架构中需要保证消息队列事件发送和本地数据库事务的原子性问题，于是事件状态表需要与业务数据库共享数据源，占用了业务数据库的资源，未来将考虑实现对多数据源的事务管理；
