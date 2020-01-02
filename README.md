@@ -74,7 +74,7 @@ public class DruidConfiguration {
     }
 }
 ```
-&emsp;&emsp;在调用方法上方添加@CreateEvent注解,并添加与该服务调用方法相对应的提交方法与补偿方法，方法参数与调用方法的参数一致
+&emsp;&emsp;在调用方法上方添加@CreateEvent注解，并添加与该服务调用方法相对应的提交方法与补偿方法，方法参数与调用方法的参数一致
 ```
 public class OrderService {
     ...
